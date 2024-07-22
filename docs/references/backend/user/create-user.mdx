@@ -40,7 +40,7 @@ function createUser: (params: CreateUserParams) => Promise<User>;
 | `publicMetadata?` | `Record<string, unknown>` | Metadata saved on the user, that is visible to both your Frontend and Backend APIs. |
 | `privateMetadata?` | `Record<string, unknown>` | Metadata saved on the user that is only visible to your Backend API. |
 | `unsafeMetadata?` | `Record<string, unknown>` | Metadata saved on the user, that can be updated from both the Frontend and Backend APIs. **Note:** Since this data can be modified from the frontend, it is not guaranteed to be safe. |
-| `createdAt` | `string` | A custom date/time denoting when the user signed up to the application, specified in [RFC3339 format](https://datatracker.ietf.org/doc/html/rfc3339). For example: `2012-10-20T07:15:20.902Z`. |
+| `createdAt?` | `string` | A custom date/time denoting when the user signed up to the application, specified in [RFC3339 format](https://datatracker.ietf.org/doc/html/rfc3339). For example: `2012-10-20T07:15:20.902Z`. |
 
 ## Example
 
